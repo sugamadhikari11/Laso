@@ -71,8 +71,6 @@ const About = () => {
       id='About'
       className="scroll-smooth  py-2 xl:px-20"
       variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
       <div className="max-w-7xl mx-auto">
