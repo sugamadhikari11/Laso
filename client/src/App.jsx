@@ -68,7 +68,7 @@ function App() {
   }
 
   return (
-    <main className="app transition-all ease-in-out" style={{ height: '100vh' }}>
+    <main className="app transition-all ease-in-out" style={{ minHeight: '300vh' }}>
       {/* Canvas - animates with scroll, then becomes static */}
       {snap.intro ? (
         <div
