@@ -68,7 +68,7 @@ function App() {
   }
 
   return (
-    <main className="app transition-all ease-in-out" style={{ minHeight: '300vh' }}>
+    <main className="app transition-all ease-in-out" style={{ minHeight: '100vh' }}>
       {/* Canvas - animates with scroll, then becomes static */}
       {snap.intro ? (
         <div
@@ -105,7 +105,13 @@ function App() {
             zIndex: 20
           }}
         >
-          <Home />
+          {/* Background overlay for mobile only */}
+          <div className="block md:hidden absolute inset-0 bg-white opacity-50 pointer-events-none z-0" />
+
+          {/* Main Home content */}
+          <div className="relative z-10">
+            <Home />
+          </div>
         </div>
       )}
 

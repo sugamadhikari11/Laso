@@ -1,8 +1,13 @@
 import React from 'react';
 import { Instagram, Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
+      <motion.section
+      id='Contact' 
+      className="scroll-smooth">
+      
     <div className="max-w-4xl mx-auto px-6 py-20">
       {/* Header */}
       <div className="text-center mb-12">
@@ -52,6 +57,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+      </motion.section>
   );
 };
 

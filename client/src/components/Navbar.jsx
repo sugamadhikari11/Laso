@@ -146,7 +146,7 @@ const Navbar = () => {
         }`}
       >
         {/* Menu Content */}
-        <div className="flex flex-col items-center justify-center h-full space-y-8">
+        <div className="flex flex-col items-center justify-center h-full space-y-8 z-index-50">
           {/* Navigation Links */}
           <div className="flex flex-col items-center space-y-6">
             <MobileNavLink href="#Home" onClick={(e) => scrollToSection('Home', e)}>Home</MobileNavLink>
@@ -175,7 +175,7 @@ const Navbar = () => {
         </div>
 
         {/* Background decoration */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-5">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-5 -z-10 pointer-events-none/2 opacity-5">
           <span className="text-black font-bold text-8xl">LASO</span>
         </div>
       </div>
