@@ -113,7 +113,9 @@ function App() {
       {snap.intro && (
         <div
           ref={aboutRef}
-          className={`absolute top-[100vh] right-0 min-h-screen z-20 w-full xlplus:w-[65%] p-4`}
+          className={`absolute top-[100vh] right-0 min-h-screen z-20 w-full xlplus:w-[65%] p-4 ${
+            isMobile ? 'bg-white bg-opacity-95' : 'bg-white xlplus:bg-transparent'
+          }`}
         >
           <About />
         </div>
