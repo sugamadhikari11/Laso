@@ -50,7 +50,7 @@ const Customizer = () => {
         if(!prompt) return alert("Please enter a propmt");
         try{
             setGeneratingImg(true);
-            const response = await fetch('http://localhost:8080/api/v1/stable-diffusion',{
+            const response = await fetch('https://laso-i1ks.onrender.com/api/v1/stable-diffusion',{
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
